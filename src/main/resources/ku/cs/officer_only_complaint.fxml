@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #Bdbbfc#Bdbbfc #Bdbbfc#Bdbbfc;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.directory.controllers.OfficerOnlyComplaintController">
+   <children>
+      <AnchorPane layoutX="502.0" layoutY="124.0" prefHeight="415.0" prefWidth="480.0" style="-fx-background-color: #D9D7F9#D9D7F9; -fx-background-radius: 20;" AnchorPane.topAnchor="125.0">
+         <children>
+            <TextField fx:id="replyTextField" layoutX="107.0" layoutY="275.0" prefHeight="80.0" prefWidth="275.0" promptText="Reply Here" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="275.0" />
+            <Label fx:id="headlineLabel" layoutX="39.0" layoutY="56.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="55.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="progressingButton" layoutX="263.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleProgressingButton" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #47467B#47467B #47467B#47467B; -fx-background-radius: 20;" text="Progressing" textFill="WHITE" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="230.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="completedButton" layoutX="123.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleCompletedButton" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #47467B#47467B #47467B#47467B; -fx-background-radius: 20;" text="Completed" textFill="#fffbfb" AnchorPane.leftAnchor="123.0" AnchorPane.topAnchor="230.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="121.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleReplyButton" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: #47467B#47467B #47467B#47467B; -fx-background-radius: 20;" text="Reply" textFill="#f5f2f2" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="363.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="detailLabel" layoutX="39.0" layoutY="98.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="95.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="statusLabel" layoutX="39.0" layoutY="14.0" textFill="RED" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="15.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="categoryLabel" layoutX="38.0" layoutY="140.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="135.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="dataLabel" layoutX="41.0" layoutY="187.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="175.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="officerCategoryListView" layoutX="28.0" layoutY="125.0" prefHeight="415.0" prefWidth="430.0" style="-fx-background-color: #47467B#47467B #47467B#47467B;" AnchorPane.topAnchor="125.0" />
+      <ChoiceBox fx:id="statusChoiceBox" layoutX="151.0" layoutY="86.0" prefHeight="26.0" prefWidth="200.0" />
+      <Button layoutX="697.0" layoutY="552.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #47467B#47467B #47467B#47467B; -fx-background-radius: 20;" text="back" textFill="#fffefe" AnchorPane.topAnchor="552.0">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <AnchorPane layoutX="142.0" layoutY="6.0" prefHeight="72.0" prefWidth="200.0" style="-fx-background-color: #47467B#47467B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="395.0" layoutY="3.0" text="OfficerOnly" textFill="#fffbfb">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="401.0" layoutY="109.0" orientation="VERTICAL" prefHeight="437.0" prefWidth="7.0" AnchorPane.leftAnchor="480.0" />
+   </children>
+</AnchorPane>
